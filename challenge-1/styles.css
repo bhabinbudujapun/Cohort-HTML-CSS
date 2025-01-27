@@ -9,26 +9,80 @@ body {
     Ubuntu, Cantarell, sans-serif;
   line-height: 1.6;
   color: white;
-  background-color: #0a0a0a;
+  background-color: #140e1f;
 }
 
-.hero {}
+/* 
+New features: 
 
-.announcement {}
+arrow:
+*/
+
+/* 
+Now it's easier than
+color: #f9f9f9
+*/
+
+/* 
+Create Stunning Websites
+color: #b6b6b8
+*/
+
+/* 
+Get Started:
+left background-color: #b6b6b8
+right background-color: #6a42ec
+color: #fdfdff
+*/
+
+
+.hero {
+  display: flex;
+  height: 100vh;
+  gap: 3em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.announcement {
+  padding: 10px 30px;
+  border-radius: 2em;
+  background-color: #1f1a29;
+}
 
 .announcement-link {
-  /*  */
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #fbfcfb;
 }
 
 .announcement-link:hover {}
 
 .announcement-text {}
 
-.announcement-button {}
+.announcement-button {
+  padding: 1px 14px;
+  border-radius: 14px;
+  background-color: #363140
+}
 
-.hero-content {}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 3em;
+}
 
-.hero-title {}
+.hero-title {
+  font-size: 4em;
+  color: #cecece;
+  line-height: 72px;
+}
+
+.hero-title span {
+  display: block;
+}
 
 .hero-description {}
 
