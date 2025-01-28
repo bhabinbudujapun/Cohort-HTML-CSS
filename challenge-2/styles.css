@@ -11,100 +11,112 @@
   --border-dark: #374151;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+background-color: #ffffff;
+
+horizontal line 
+color: #29282c;
+
+switch theme button
+background-color: #2663ec;
+
+Build better
+color: #262626
+
+introduction a new
+color: #a0a1a0;
+
+Enter work email
+border-color: #f1f2f4
+color: #a6adb8
+
+Request Demo
+background-color: #3c82f5
+color: #f1f6fe
+
+Trusted by
+color: #a0a1a0;
+
+*/
+
 body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
-.hero {
-}
+.dark-mode {}
 
-.hero-grid {
-}
+.hero {}
 
-.content-col h1 {
-}
+.hero-grid {}
 
-.content-col p {
-}
+.content-col h1 {}
 
-.cta-group {
-}
+.content-col p {}
 
-.sr-only {
-}
+.cta-group {}
 
-.input-wrapper {
-}
+.sr-only {}
 
-input[type='text'] {
-}
+.input-wrapper {}
 
-.demo-button {
-}
+input[type='text'] {}
 
-.demo-button:hover {
-}
+.demo-button {}
 
-.brands-section {
-}
+.demo-button:hover {}
 
-.trusted-by {
-}
+.brands-section {}
 
-.brand-logos {
-}
+.trusted-by {}
 
-.brand-logo {
-}
+.brand-logos {}
 
-.image-col {
-}
+.brand-logo {}
 
-.hero-image {
-}
+.image-col {}
+
+.hero-image {}
 
 @media (min-width: 640px) {
-  .hero {
-  }
+  .hero {}
 
-  .content-col h1 {
-  }
+  .content-col h1 {}
 
-  .cta-group {
-  }
+  .cta-group {}
 
-  .demo-button {
-  }
+  .demo-button {}
 
-  .input-wrapper {
-  }
+  .input-wrapper {}
 
-  input[type='text'] {
-  }
+  input[type='text'] {}
 }
 
 @media (min-width: 768px) {
-  .content-col h1 {
-  }
+  .content-col h1 {}
 }
 
 @media (min-width: 1024px) {
-  .hero {
-  }
+  .hero {}
 
-  .hero-grid {
-  }
+  .hero-grid {}
 
-  .content-col h1 {
-  }
+  .content-col h1 {}
 
-  .cta-group {
-  }
+  .cta-group {}
 
-  .brands-section {
-  }
+  .brands-section {}
 
-  .image-col {
-  }
+  .image-col {}
 }
 
 @media (min-width: 1280px) {
@@ -113,23 +125,16 @@ input[type='text'] {
   }
 }
 
-.dark-mode-toggle {
-}
+.dark-mode-toggle {}
 
-.dark-mode-toggle:hover {
-}
+.dark-mode-toggle:hover {}
 
-body.dark {
-}
+body.dark {}
 
-.dark-mode-toggle {
-}
+.dark-mode-toggle {}
 
-.dark-mode-toggle:hover {
-}
+.dark-mode-toggle:hover {}
 
-input[type='text'].dark {
-}
+input[type='text'].dark {}
 
-input[type='text']::placeholder {
-}
+input[type='text']::placeholder {}
