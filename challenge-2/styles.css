@@ -15,17 +15,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
-
-/* 
-Enter work email
-border-color: #f1f2f4
-color: #a6adb8
-
-Trusted by
-color: #a0a1a0;
-
-*/
 
 body {
   display: grid;
@@ -57,8 +48,7 @@ body {
   font-weight: 900;
 }
 
-.content-col p,
-.trusted-by {
+.content-col p {
   color: #000000;
   font-size: 1.5em;
   font-weight: 500;
@@ -70,8 +60,16 @@ body {
 }
 
 #hero-input {
-  padding: 14px 28px;
-  border-radius: 6px solid #cacaca;
+  padding: 14px 40px;
+  border-radius: 0.5em;
+  outline: none;
+  border: 1px solid #cacaca;
+  color: #a6adb8;
+}
+
+input[type='text'] {
+  color: #a6adb8;
+  font-size: 1.2em;
 }
 
 .demo-button {
@@ -79,19 +77,30 @@ body {
   border-style: none;
   border-radius: 0.5em;
   color: #ffffff;
-  padding: 10px 18px;
-  font-size: 1em;
+  padding: 10px 34px;
+  font-size: 1.1em;
+  font-weight: 500;
+  cursor: pointer;
 }
-
-/* .brand-logo {
-  display: flex;
-  flex-direction: column;
-} */
 
 .hero-image {
   border-radius: 1.5em;
   height: 650px;
 }
+
+.trusted-by {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1em;
+  color: #565656;
+}
+
+.brand-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 @media (min-width: 640px) {
   /* .hero {}
@@ -136,7 +145,8 @@ body {
   background-color: #2663ec;
   border-style: none;
   color: #f1f6fe;
-  font-size: 1em;
+  font-size: 1.1em;
+  font-weight: 500;
   border-radius: 0.5em;
   cursor: pointer;
 }
@@ -153,4 +163,6 @@ body.dark {}
 
 input[type='text'].dark {}
 
-input[type='text']::placeholder {} */
+input[type='text']::placeholder {}
+
+*/
