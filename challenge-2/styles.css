@@ -18,27 +18,9 @@
 }
 
 /* 
-background-color: #ffffff;
-
-horizontal line 
-color: #29282c;
-
-switch theme button
-background-color: #2663ec;
-
-Build better
-color: #262626
-
-introduction a new
-color: #a0a1a0;
-
 Enter work email
 border-color: #f1f2f4
 color: #a6adb8
-
-Request Demo
-background-color: #3c82f5
-color: #f1f6fe
 
 Trusted by
 color: #a0a1a0;
@@ -46,49 +28,73 @@ color: #a0a1a0;
 */
 
 body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+  display: grid;
   justify-content: center;
   align-items: center;
+  align-content: space-evenly;
+  height: 100vh;
 }
 
-.dark-mode {}
+.dark-mode {
+  justify-self: flex-end;
+}
 
-.hero {}
+.hero-grid {
+  display: flex;
 
-.hero-grid {}
+}
 
-.content-col h1 {}
+.content-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
 
-.content-col p {}
+.content-col h1 {
+  color: #111827;
+  font-size: 5em;
+  font-weight: 900;
+}
 
-.cta-group {}
+.content-col p,
+.trusted-by {
+  color: #000000;
+  font-size: 1.5em;
+  font-weight: 500;
+}
 
-.sr-only {}
+.cta-group {
+  display: flex;
+  gap: 8px;
+}
 
-.input-wrapper {}
+#hero-input {
+  padding: 14px 28px;
+  border-radius: 6px solid #cacaca;
+}
 
-input[type='text'] {}
+.demo-button {
+  background-color: #3c82f5;
+  border-style: none;
+  border-radius: 0.5em;
+  color: #ffffff;
+  padding: 10px 18px;
+  font-size: 1em;
+}
 
-.demo-button {}
+/* .brand-logo {
+  display: flex;
+  flex-direction: column;
+} */
 
-.demo-button:hover {}
-
-.brands-section {}
-
-.trusted-by {}
-
-.brand-logos {}
-
-.brand-logo {}
-
-.image-col {}
-
-.hero-image {}
+.hero-image {
+  border-radius: 1.5em;
+  height: 650px;
+}
 
 @media (min-width: 640px) {
-  .hero {}
+  /* .hero {}
 
   .content-col h1 {}
 
@@ -98,15 +104,15 @@ input[type='text'] {}
 
   .input-wrapper {}
 
-  input[type='text'] {}
+  input[type='text'] {} */
 }
 
 @media (min-width: 768px) {
-  .content-col h1 {}
+  /* .content-col h1 {} */
 }
 
 @media (min-width: 1024px) {
-  .hero {}
+  /* .hero {}
 
   .hero-grid {}
 
@@ -116,7 +122,7 @@ input[type='text'] {}
 
   .brands-section {}
 
-  .image-col {}
+  .image-col {} */
 }
 
 @media (min-width: 1280px) {
@@ -125,7 +131,17 @@ input[type='text'] {}
   }
 }
 
-.dark-mode-toggle {}
+.dark-mode-toggle {
+  padding: 10px 22px;
+  background-color: #2663ec;
+  border-style: none;
+  color: #f1f6fe;
+  font-size: 1em;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+/* 
 
 .dark-mode-toggle:hover {}
 
@@ -137,4 +153,4 @@ body.dark {}
 
 input[type='text'].dark {}
 
-input[type='text']::placeholder {}
+input[type='text']::placeholder {} */
