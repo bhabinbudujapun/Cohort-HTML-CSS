@@ -18,7 +18,7 @@
   font-family: sans-serif;
 }
 
-body {
+.main-container {
   display: grid;
   justify-content: center;
   align-items: center;
@@ -101,44 +101,8 @@ input[type='text'] {
   align-items: center;
 }
 
+@media (max-width: 425px) {}
 
-@media (min-width: 640px) {
-  /* .hero {}
-
-  .content-col h1 {}
-
-  .cta-group {}
-
-  .demo-button {}
-
-  .input-wrapper {}
-
-  input[type='text'] {} */
-}
-
-@media (min-width: 768px) {
-  /* .content-col h1 {} */
-}
-
-@media (min-width: 1024px) {
-  /* .hero {}
-
-  .hero-grid {}
-
-  .content-col h1 {}
-
-  .cta-group {}
-
-  .brands-section {}
-
-  .image-col {} */
-}
-
-@media (min-width: 1280px) {
-  .hero-grid {
-    gap: 3rem;
-  }
-}
 
 .dark-mode-toggle {
   padding: 10px 22px;
@@ -150,19 +114,3 @@ input[type='text'] {
   border-radius: 0.5em;
   cursor: pointer;
 }
-
-/* 
-
-.dark-mode-toggle:hover {}
-
-body.dark {}
-
-.dark-mode-toggle {}
-
-.dark-mode-toggle:hover {}
-
-input[type='text'].dark {}
-
-input[type='text']::placeholder {}
-
-*/
