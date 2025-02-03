@@ -82,16 +82,21 @@ body {
   box-shadow: 0 0 8px #2e5fec;
 }
 
-@media (max-width: 640px) {
-  .hero {
-    padding: 1rem;
+@media (max-width: 425px) {
+  .hero-title {
+    font-size: 3em;
+  }
+
+  .hero-description {
+    font-size: 1.3em;
   }
 
   .announcement-link {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 
-  .hero-content {
-    padding: 0 1rem;
+  .cta-button a {
+    padding: 7px 26px;
+    font-size: 1.2em;
   }
 }
