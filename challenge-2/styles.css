@@ -21,9 +21,9 @@
 .main-container {
   display: grid;
   justify-content: center;
-  align-items: center;
-  align-content: space-evenly;
+  align-content: center;
   height: 100vh;
+  gap: 30px;
 }
 
 .dark-mode {
@@ -32,14 +32,15 @@
 
 .hero-grid {
   display: flex;
-
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 }
 
 .content-col {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 40px;
+  gap: 15px;
 }
 
 .content-col h1 {
@@ -101,7 +102,9 @@ input[type='text'] {
   align-items: center;
 }
 
-@media (max-width: 425px) {}
+@media (max-width: 425px) {
+  
+}
 
 
 .dark-mode-toggle {
