@@ -164,3 +164,34 @@ input[type='text'] {
     height: 300px;
   }
 }
+
+/* For Laptop */
+@media (min-width: 921px) and (max-width: 1200px) {
+  .dark-mode-toggle {
+    margin-right: 2px;
+    font-size: 1em;
+  }
+
+  .content-col h1 {
+    line-height: 1em;
+    font-size: 3em;
+  }
+
+  .content-col p {
+    font-size: 1.2em;
+  }
+
+  .cta-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-image {
+    border-radius: 1.5em;
+    height: 380px;
+  }
+
+  #hero-input {
+    width: 20em;
+  }
+}
