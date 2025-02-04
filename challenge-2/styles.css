@@ -89,7 +89,7 @@ input[type='text'] {
   border-style: none;
   border-radius: 0.5em;
   color: #ffffff;
-  padding: 10px 34px;
+  padding: 10px 0;
   font-size: 1.1em;
   font-weight: 500;
   cursor: pointer;
@@ -111,4 +111,56 @@ input[type='text'] {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/* Mobile and Tablet */
+@media (max-width: 920px) {
+  .dark-mode {
+    margin-right: 5px;
+  }
+
+  .dark-mode-toggle {
+    padding: 9px 16px;
+    font-size: 1em;
+  }
+
+  .hero-grid {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .content-col {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .content-col h1 {
+    font-size: 3em;
+    line-height: 1.1em;
+    font-weight: 900;
+  }
+
+  .content-col p {
+    font-size: 1.2em;
+  }
+
+  .cta-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .demo-button {
+    width: 21.8em;
+    padding: 13px 0;
+  }
+
+  #hero-input {
+    padding: 12px 40px;
+    width: 20em;
+  }
+
+  .hero-image {
+    height: 300px;
+  }
 }
