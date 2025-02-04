@@ -30,11 +30,22 @@
   justify-self: flex-end;
 }
 
+.dark-mode-toggle {
+  padding: 10px 22px;
+  background-color: #2663ec;
+  border-style: none;
+  color: #f1f6fe;
+  font-size: 1.1em;
+  font-weight: 500;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
 .hero-grid {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
 }
 
 .content-col {
@@ -100,20 +111,4 @@ input[type='text'] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-@media (max-width: 425px) {
-  
-}
-
-
-.dark-mode-toggle {
-  padding: 10px 22px;
-  background-color: #2663ec;
-  border-style: none;
-  color: #f1f6fe;
-  font-size: 1.1em;
-  font-weight: 500;
-  border-radius: 0.5em;
-  cursor: pointer;
 }
