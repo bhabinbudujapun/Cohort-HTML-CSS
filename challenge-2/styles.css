@@ -113,6 +113,48 @@ input[type='text'] {
   align-items: center;
 }
 
+/*Small Screen Mobile Phone */
+@media (min-width: 0px) and (max-width: 425px) {
+  .dark-mode-toggle {
+    padding: 9px 15px;
+    font-size: 0.9em;
+  }
+
+  .hero-grid {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .hero-image {
+    border-radius: 1.5em;
+    height: 250px;
+  }
+
+  .content-col h1 {
+    font-size: 3em;
+    text-align: center;
+    line-height: 1em;
+  }
+
+  .content-col p {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .cta-group {
+    flex-direction: column;
+  }
+
+  #hero-input {
+    width: 16em;
+  }
+
+  .demo-button {
+    padding: 13px 34px;
+    width: 17.5em;
+  }
+}
+
 /* Mobile and Tablet */
 @media (min-width: 426px) and (max-width: 920px) {
   .dark-mode {
