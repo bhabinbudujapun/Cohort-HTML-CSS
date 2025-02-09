@@ -27,7 +27,7 @@ h1 {
 .pricing-heading {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .pricing-container {
@@ -36,17 +36,43 @@ h1 {
   align-items: center;
   text-align: center;
   gap: 30px;
+  margin: 0 30px;
 }
 
 .pricing-card {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
-  border: 1px solid orange;
+  padding: 15px 15px;
+  border-radius: 0.5em;
+  background: #ffffff;
+  border: 2px solid #ff8417;
 }
 
 .pricing-card:hover {
   /* Add your styles here */
+}
+
+.pricing-card h2,
+.pricing-card .price {
+  color: #07141f;
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+.pricing-card .price {
+  font-size: 2em;
+}
+
+.pricing-card .period {
+  color: #6d6a7b;
+}
+
+.pricing-card ul li {
+  color: #222222;
+  font-weight: 500;
+
 }
 
 .pricing-card.popular {
@@ -75,7 +101,12 @@ h1 {
 }
 
 .subscribe-btn {
-  /* Add your styles here */
+  background: #ff9533;
+  color: #311403;
+  padding: 15px 35px;
+  border-style: none;
+  border-radius: 1.7em;
+  font-size: 1em;
 }
 
 .subscribe-btn:hover {
@@ -83,15 +114,31 @@ h1 {
 }
 
 /* Responsive Design for Mobile And Tablet */
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 0) and (max-width: 768px) {
 
   .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 30px 20px;
   }
 
-  .pricing-container{
+  .pricing-container {
     display: flex;
     flex-direction: column
+  }
+
+  .pricing-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+/* Responsive  Design for Laptops And Larger Devices*/
+@media (min-width: 769px) {
+  .container {
+    height: 80vh;
   }
 }
