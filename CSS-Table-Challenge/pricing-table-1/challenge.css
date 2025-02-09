@@ -1,0 +1,97 @@
+/* Challenge CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.pricing-heading {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid orange;
+}
+
+.pricing-card:hover {
+  /* Add your styles here */
+}
+
+.pricing-card.popular {
+  /* Add your styles here */
+}
+
+.popular-badge {
+  /* Add your styles here */
+}
+
+.price {
+  /* Add your styles here */
+}
+
+.period {
+  /* Add your styles here */
+}
+
+.features {
+  /* Add your styles here */
+}
+
+.features li {
+  margin-bottom: 15px;
+  list-style: none;
+}
+
+.subscribe-btn {
+  /* Add your styles here */
+}
+
+.subscribe-btn:hover {
+  /* Add your styles here */
+}
+
+/* Responsive Design for Mobile And Tablet */
+@media (min-width: 320px) and (max-width: 768px) {
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pricing-container{
+    display: flex;
+    flex-direction: column
+  }
+}
