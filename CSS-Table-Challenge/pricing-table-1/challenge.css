@@ -22,6 +22,7 @@ body {
 
 h1 {
   text-align: center;
+  font-size: 2.5em;
 }
 
 .pricing-heading {
@@ -44,14 +45,13 @@ h1 {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  padding: 15px 15px;
+  padding: 30px 15px;
   border-radius: 0.5em;
   background: #ffffff;
-  border: 2px solid #ff8417;
 }
 
-.pricing-card:hover {
-  /* Add your styles here */
+.popular {
+  border: 2px solid #ff8417;
 }
 
 .pricing-card h2,
@@ -72,32 +72,35 @@ h1 {
 .pricing-card ul li {
   color: #222222;
   font-weight: 500;
-
 }
 
 .pricing-card.popular {
-  /* Add your styles here */
+  position: relative;
 }
 
 .popular-badge {
-  /* Add your styles here */
-}
-
-.price {
-  /* Add your styles here */
-}
-
-.period {
-  /* Add your styles here */
-}
-
-.features {
-  /* Add your styles here */
+  position: absolute;
+  top: -23px;
+  padding: 8px 18px;
+  border-radius: 1.7em;
+  color: #fff8f3;
+  background-color: #ff7800;
 }
 
 .features li {
   margin-bottom: 15px;
   list-style: none;
+}
+
+.features li::before {
+  content: "";
+  display: inline-block;
+  background: url(./assets/chaicodelogo.png);
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  vertical-align: middle;
 }
 
 .subscribe-btn {
@@ -107,10 +110,6 @@ h1 {
   border-style: none;
   border-radius: 1.7em;
   font-size: 1em;
-}
-
-.subscribe-btn:hover {
-  /* Add your styles here */
 }
 
 /* Responsive Design for Mobile And Tablet */
@@ -125,7 +124,7 @@ h1 {
 
   .pricing-container {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
   }
 
   .pricing-heading {
@@ -134,11 +133,19 @@ h1 {
     align-items: center;
   }
 
+  h1 {
+    text-align: center;
+    font-size: 2em;
+  }
+
 }
 
 /* Responsive  Design for Laptops And Larger Devices*/
 @media (min-width: 769px) {
+
   .container {
-    height: 80vh;
+    height: 90vh;
+    gap: 50px;
   }
+
 }
