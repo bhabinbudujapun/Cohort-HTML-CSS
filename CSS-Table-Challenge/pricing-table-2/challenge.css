@@ -13,27 +13,44 @@ body {
 }
 
 .container {
-  /* Add your styles here */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 25px 25px;
 }
 
 .header {
-  /* Add your styles here */
+  text-align: center;
 }
 
 h1 {
-  /* Add your styles here */
+  font-size: 2.5em;
 }
 
 .subtitle {
-  /* Add your styles here */
+  font-weight: 500;
+  letter-spacing: 0.11em;
 }
 
 .pricing-container {
-  /* Add your styles here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .pricing-card {
-  /* Add your styles here */
+  border: 1px solid orange;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 30px;
+  border-radius: 1.2em;
 }
 
 .pricing-card:hover {
@@ -41,35 +58,58 @@ h1 {
 }
 
 .card-header {
-  /* Add your styles here */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.card-header h2 {
+  font-size: 2.1em;
 }
 
 .icon {
-  /* Add your styles here */
+  font-size: 3em;
+}
+
+.pricing-card.popular {
+  position: relative;
 }
 
 .popular-tag {
-  /* Add your styles here */
+  position: absolute;
+  top: -13px;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0.2em;
 }
 
 .price-block {
-  /* Add your styles here */
+  background-color: orange;
+  padding: 18px 60px;
+  border-radius: 1em;
 }
 
 .price {
-  /* Add your styles here */
+  font-weight: 700;
+  font-size: 2em;
 }
 
 .period {
-  /* Add your styles here */
+  font-weight: 300;
+  font-size: 1em;
+  text-transform: uppercase;
 }
 
 .features {
-  /* Add your styles here */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
 }
 
 .features li {
-  /* Add your styles here */
+  list-style: none;
+  font-size: 1em;
 }
 
 .features li.disabled {
@@ -77,7 +117,11 @@ h1 {
 }
 
 .join-btn {
-  /* Add your styles here */
+  padding: 18px 60px;
+  border: 1px solid orange;
+  border-radius: 1em;
+  font-size: 1em;
+  font-weight: 600;
 }
 
 .join-btn:hover {
