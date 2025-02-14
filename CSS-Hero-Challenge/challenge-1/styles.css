@@ -14,7 +14,7 @@ body {
 
 .hero {
   display: flex;
-  height: 100vh;
+  margin: 2rem 0;
   gap: 3em;
   flex-direction: column;
   justify-content: center;
