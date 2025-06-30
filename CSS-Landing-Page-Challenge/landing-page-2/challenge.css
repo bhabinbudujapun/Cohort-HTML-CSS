@@ -5,6 +5,28 @@
   box-sizing: border-box;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-image: url('./assets/chaicohort_laptop.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  /* 0.4 = 40% darkness */
+
+  background-blend-mode: darken;
+
+  filter: blur(4px);
+  z-index: -1;
+}
+
 body {
   font-family: "Inter", sans-serif;
   line-height: 1.6;
@@ -12,19 +34,34 @@ body {
 
 /* Navbar styles */
 .navbar {
-  /* Add styles for the navbar */
+  display: flex;
+  padding: 1rem 4%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
 }
 
 .logo {
-  /* Add styles for the logo */
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #00ff9d;
 }
 
 .logo img {
-  /* Add styles for the logo image */
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #00ff9d;
+}
+
+.menu {
+  display: flex;
+  gap: 2.5rem;
 }
 
 .menu a {
-  /* Add styles for the navigation links */
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .menu a:hover {
@@ -32,20 +69,40 @@ body {
 }
 
 /* Hero section styles */
-.hero {
-  /* Add styles for the hero section */
+.main-container {
+  height: calc(100vh - 72px);
+  /* assuming navbar height is ~72px */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 0;
+  /* optional spacing */
 }
 
+.hero {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 4%;
+  text-align: center;
+}
+
+
 .hero-content {
-  /* Add styles for the hero content container */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .hero-content h1 {
-  /* Add styles for the hero heading */
+  color: #00ff9d;
 }
 
 .hero-content p {
-  /* Add styles for the hero paragraph */
+  color: #ffffff;
 }
 
 .hero-content img {
@@ -53,7 +110,11 @@ body {
 }
 
 .enroll-button {
-  /* Add styles for the enroll button */
+  padding: 16px 48px;
+  border-radius: 24px;
+  background-color: #00ff9d;
+  border: none;
+  outline: none;
 }
 
 .enroll-button:hover {
@@ -62,17 +123,49 @@ body {
 
 /* Highlights section styles */
 .highlights {
-  /* Add styles for the highlights section */
+  display: flex;
+  flex-wrap: wrap;
+  /* allows wrapping on smaller screens */
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 4%;
+  background-color: #1a1a1a;
 }
 
+/* Cards maintain consistent styling */
 .highlight-card {
-  /* Add styles for each highlight card */
+  flex: 1 1 200px;
+  /* allows the card to shrink/grow with min width of 200px */
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #2a2a2a;
+  padding: 36px 26px;
+  border-radius: 1rem;
+  text-align: center;
 }
 
+/* Responsive text alignment */
 .highlight-card h3 {
-  /* Add styles for highlight card headings */
+  color: #00ff9d;
+  font-size: 1.2rem;
 }
 
 .highlight-card p {
-  /* Add styles for highlight card paragraphs */
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .logo h2 {
+    display: none;
+  }
+
+  .highlights {
+    flex-direction: column;
+  }
 }
