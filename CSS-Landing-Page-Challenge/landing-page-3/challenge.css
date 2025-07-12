@@ -12,19 +12,33 @@ body {
 }
 
 .header {
-  /* Define header styles here */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #fff; /* or your desired header background */
 }
 
 .logo {
-  /* Define logo styles here */
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .logo img {
-  /* Define image styles within the logo here */
+  margin-right: 10px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 20px;
 }
 
 .nav-menu a {
-  /* Define navigation link styles here */
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
 }
 
 .nav-menu a:hover {
@@ -32,20 +46,40 @@ body {
 }
 
 .hero {
-  /* Define hero section styles here */
+  height: 100vh;
+  background: url('./assets/chaipatti.png') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
 }
 
-.hero-text h1 {
-  /* Define styles for h1 in hero-text here */
+.hero-text {
+  max-width: 600px;
 }
 
-.hero-text p {
-  /* Define styles for paragraph in hero-text here */
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
 .shop-button {
-  /* Define shop button styles here */
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #d2691e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
+
 
 .shop-button:hover {
   /* Define hover styles for shop button here */
